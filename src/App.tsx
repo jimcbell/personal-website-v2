@@ -12,6 +12,8 @@ function App() {
   const projectsRef = useRef<HTMLElement>(null);
 
   const [activeSection, setActiveSection] = useState("home");
+  const [isHome, setHome] = useState(true);
+
   const sections = {
     home: homeRef,
     about: aboutRef,
@@ -29,6 +31,11 @@ function App() {
             scrollPosition >= offsetTop &&
             scrollPosition < offsetTop + offsetHeight
           ) {
+            if (ref != homeRef) {
+              setHome(false);
+            } else {
+              setHome(true);
+            }
             setActiveSection(key);
           }
         }
@@ -47,7 +54,7 @@ function App() {
 
   return (
     <div className="App">
-      <nav className="navbar">
+      <nav className={`navbar ${isHome ? "home" : "scrolled"}`}>
         <div className="nav-container">
           <h1 className="nav-logo">James Campbell</h1>
           <ul className="nav-menu">
@@ -55,7 +62,7 @@ function App() {
               <li
                 key={key}
                 className={activeSection === key ? "active" : ""}
-                onClick={() => scrollToSection(ref)} // Now ref is properly typed
+                onClick={() => scrollToSection(ref)}
               >
                 {key.charAt(0).toUpperCase() + key.slice(1)}
               </li>

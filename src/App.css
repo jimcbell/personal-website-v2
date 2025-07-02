@@ -1,16 +1,52 @@
-/* Navigation Bar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0a0a0a;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Nav Menu Section */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  z-index: 1000;
-  padding: 20px 0;
+}
+
+.navbar.scrolled h1,
+.navbar.scrolled li {
+  color: black;
+}
+
+.navbar.scrolled .nav-menu li:hover {
+  color: gray;
+}
+
+.navbar.scrolled .nav-menu li.active {
+  color: gray;
+}
+
+.navbar.scrolled .nav-menu li.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: black;
+  border-radius: 1px;
 }
 
 .nav-container {
@@ -66,15 +102,13 @@
   background: white;
   border-radius: 1px;
 }
-
-/* Responsive Design */
 @media (max-width: 768px) {
   .nav-container {
     padding: 0 30px;
   }
 
   .nav-menu {
-    display: none; /* You might want to add a mobile menu toggle */
+    display: none;
   }
 
   .nav-logo {
@@ -87,8 +121,6 @@
     padding: 0 20px;
   }
 }
-
-/* Optional: Add a subtle animation when the navbar becomes visible */
 .navbar {
   animation: slideDown 0.3s ease-out;
 }
@@ -102,99 +134,6 @@
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: #0a0a0a;
-  color: #ffffff;
-  overflow-x: hidden;
-}
-
-.mockup-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.browser-frame {
-  background: #1a1a1a;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-}
-
-.browser-header {
-  background: #2a2a2a;
-  padding: 12px 20px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.browser-dots {
-  display: flex;
-  gap: 6px;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.dot.red {
-  background: #ff5f57;
-}
-.dot.yellow {
-  background: #ffbd2e;
-}
-.dot.green {
-  background: #28ca42;
-}
-
-.address-bar {
-  flex: 1;
-  margin-left: 20px;
-  background: #3a3a3a;
-  padding: 6px 12px;
-  border-radius: 6px;
-  color: #999;
-  font-size: 12px;
-}
-
-.website-content {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  min-height: 800px;
-  position: relative;
-}
-
-/* Navigation */
-.nav-mockup {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  padding: 20px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.logo-mockup {
-  font-size: 24px;
-  font-weight: 700;
-  color: white;
-}
-
-.nav-links-mockup {
-  display: flex;
-  gap: 40px;
 }
 
 .nav-link {
@@ -321,17 +260,18 @@ body {
 .skill-card-content {
   position: absolute;
   top: 0;
-  left: 100%;
-  margin-left: 30px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
   background: white;
   border-radius: 16px;
-  padding: 40px 30px;
-  min-width: 300px;
+  min-width: 100%;
+  height: 100%;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   border: 1px solid #e0e0e0;
   visibility: hidden;
-  transform: translateX(-30px);
-  transition: all 0.3s ease-in-out;
+  transform: translateY(30px);
+  transition: all 0.5s ease-in;
   z-index: 10;
 }
 .skill-card:hover .skill-card-content {
@@ -339,7 +279,67 @@ body {
   visibility: visible;
   transform: translateX(0);
 }
+.dropdown-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px auto;
+  color: #333;
+  text-align: left;
+}
 
+.skill-bar-item {
+  margin: 0 10px 5px;
+}
+
+.skill-bar-item:last-child {
+  margin-bottom: 0;
+}
+
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.skill-percentage {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.skill-bar-bg {
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 4px;
+  width: 0%;
+  transition: width 0.8s ease 0.3s;
+}
+
+.skill-card:hover .skill-bar-fill {
+  width: var(--skill-width);
+}
+
+/* Responsive adjustments */
+/* @media (max-width: 768px) {
+  .skill-desc::after {
+    position: relative;
+    top: 15px;
+    color: black;
+    content: "CLICKABLE";
+    display: block;
+    text-decoration: overline;
+  }
+} */
 .skill-icon {
   font-size: 48px;
   margin-bottom: 20px;
@@ -475,16 +475,7 @@ body {
   border-top: 1px solid #333;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
-  .nav-mockup {
-    padding: 20px 30px;
-  }
-
-  .nav-links-mockup {
-    display: none;
-  }
-
   .hero-mockup {
     padding: 80px 30px;
   }

@@ -18,7 +18,10 @@ export default function Skills() {
                 <span className="skill-percentage">90%</span>
               </div>
               <div className="skill-bar-bg">
-                <div className="skill-bar-fill"></div>
+                <div
+                  className="skill-bar-fill"
+                  style={{ "--skill-width": "90%" } as React.CSSProperties}
+                ></div>
               </div>
             </div>
             <div className="skill-bar-item">
@@ -27,7 +30,10 @@ export default function Skills() {
                 <span className="skill-percentage">85%</span>
               </div>
               <div className="skill-bar-bg">
-                <div className="skill-bar-fill"></div>
+                <div
+                  className="skill-bar-fill"
+                  style={{ "--skill-width": "85%" } as React.CSSProperties}
+                ></div>
               </div>
             </div>
             <div className="skill-bar-item">
@@ -36,7 +42,10 @@ export default function Skills() {
                 <span className="skill-percentage">95%</span>
               </div>
               <div className="skill-bar-bg">
-                <div className="skill-bar-fill"></div>
+                <div
+                  className="skill-bar-fill"
+                  style={{ "--skill-width": "95%" } as React.CSSProperties}
+                ></div>
               </div>
             </div>
             <div className="skill-bar-item">
@@ -45,7 +54,10 @@ export default function Skills() {
                 <span className="skill-percentage">75%</span>
               </div>
               <div className="skill-bar-bg">
-                <div className="skill-bar-fill"></div>
+                <div
+                  className="skill-bar-fill"
+                  style={{ "--skill-width": "75%" } as React.CSSProperties}
+                ></div>
               </div>
             </div>
           </div>
@@ -57,6 +69,57 @@ export default function Skills() {
             Node.js, .NET, databases, and API development for scalable server
             solutions
           </p>
+          <div className="skill-card-content">
+            <div className="dropdown-title">Backend Skills</div>
+            <div className="skill-bar-item">
+              <div className="skill-name">
+                <span>.NET / C#</span>
+                <span className="skill-percentage">95%</span>
+              </div>
+              <div className="skill-bar-bg">
+                <div
+                  className="skill-bar-fill"
+                  style={{ "--skill-width": "95%" } as React.CSSProperties}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-bar-item">
+              <div className="skill-name">
+                <span>Node.js</span>
+                <span className="skill-percentage">90%</span>
+              </div>
+              <div className="skill-bar-bg">
+                <div
+                  className="skill-bar-fill"
+                  style={{ "--skill-width": "90%" } as React.CSSProperties}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-bar-item">
+              <div className="skill-name">
+                <span>SQL Server</span>
+                <span className="skill-percentage">90%</span>
+              </div>
+              <div className="skill-bar-bg">
+                <div
+                  className="skill-bar-fill"
+                  style={{ "--skill-width": "90%" } as React.CSSProperties}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-bar-item">
+              <div className="skill-name">
+                <span>MongoDb</span>
+                <span className="skill-percentage">80%</span>
+              </div>
+              <div className="skill-bar-bg">
+                <div
+                  className="skill-bar-fill"
+                  style={{ "--skill-width": "80%" } as React.CSSProperties}
+                ></div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="skill-card">
           <span className="skill-icon">☁️</span>
@@ -65,6 +128,57 @@ export default function Skills() {
             Azure, AWS, Docker, CI/CD pipelines, and modern deployment
             strategies
           </p>
+          <div className="skill-card-content">
+            <div className="dropdown-title">Cloud & DevOps Skills</div>
+            <div className="skill-bar-item">
+              <div className="skill-name">
+                <span>Azure</span>
+                <span className="skill-percentage">95%</span>
+              </div>
+              <div className="skill-bar-bg">
+                <div
+                  className="skill-bar-fill"
+                  style={{ "--skill-width": "95%" } as React.CSSProperties}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-bar-item">
+              <div className="skill-name">
+                <span>Docker</span>
+                <span className="skill-percentage">85%</span>
+              </div>
+              <div className="skill-bar-bg">
+                <div
+                  className="skill-bar-fill"
+                  style={{ "--skill-width": "85%" } as React.CSSProperties}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-bar-item">
+              <div className="skill-name">
+                <span>AWS</span>
+                <span className="skill-percentage">70%</span>
+              </div>
+              <div className="skill-bar-bg">
+                <div
+                  className="skill-bar-fill"
+                  style={{ "--skill-width": "70%" } as React.CSSProperties}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-bar-item">
+              <div className="skill-name">
+                <span>CI/CD Scripting</span>
+                <span className="skill-percentage">75%</span>
+              </div>
+              <div className="skill-bar-bg">
+                <div
+                  className="skill-bar-fill"
+                  style={{ "--skill-width": "75%" } as React.CSSProperties}
+                ></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
