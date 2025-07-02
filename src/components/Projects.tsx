@@ -4,27 +4,6 @@ export default function Projects() {
       <h2 className="section-title">Featured Projects</h2>
       <div className="projects-grid">
         <div className="project-card">
-          <div className="project-image">🗃️</div>
-          <div className="project-content">
-            <h3 className="project-title">
-              <a href="https://www.filefreak.io" target="_blank">
-                FileFreak.io 🔗
-              </a>
-            </h3>
-            <p className="project-desc">
-              A secure, scalable, web application allowing users to store and
-              retrieve files in the cloud. Premium tier subscriptions available
-              through Stripe integration.
-            </p>
-            <div className="project-tags">
-              <span className="tag">React</span>
-              <span className="tag">NodeJs</span>
-              <span className="tag">SQL Server</span>
-              <span className="tag">Docker</span>
-            </div>
-          </div>
-        </div>
-        <div className="project-card">
           <div className="project-image">🗑️</div>
           <div className="project-content">
             <h3 className="project-title">
@@ -68,6 +47,27 @@ export default function Projects() {
               <span className="tag">React</span>
               <span className="tag">Node.js</span>
               <span className="tag">MongoDb</span>
+            </div>
+          </div>
+        </div>
+        <div className="project-card">
+          <div className="project-image">🗃️</div>
+          <div className="project-content">
+            <h3 className="project-title">
+              <a href="https://www.filefreak.io" target="_blank">
+                FileFreak.io 🔗
+              </a>
+            </h3>
+            <p className="project-desc">
+              A secure, scalable, web application allowing users to store and
+              retrieve files in the cloud. Premium tier subscriptions available
+              through Stripe integration.
+            </p>
+            <div className="project-tags">
+              <span className="tag">React</span>
+              <span className="tag">NodeJs</span>
+              <span className="tag">SQL Server</span>
+              <span className="tag">Docker</span>
             </div>
           </div>
         </div>
