@@ -372,6 +372,7 @@ body {
 }
 
 .project-card {
+  position: relative;
   background: white;
   border-radius: 20px;
   overflow: hidden;
@@ -397,7 +398,11 @@ body {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 12px;
+}
+.project-title a {
+  text-decoration: none;
   color: #333;
+  cursor: pointer;
 }
 
 .project-desc {
