@@ -1,0 +1,128 @@
+.skills-section {
+  background: #f8f9fa;
+  padding: 100px 60px;
+  color: #333;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0f0f0;
+  position: relative;
+}
+.skill-card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 16px;
+  min-width: 100%;
+  height: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e0e0e0;
+  visibility: hidden;
+  transform: translateY(30px);
+  transition: all 0.5s ease-in;
+  z-index: 10;
+}
+.skill-card:hover .skill-card-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+.dropdown-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px auto;
+  color: #333;
+  text-align: left;
+}
+
+.skill-bar-item {
+  margin: 0 10px 5px;
+}
+
+.skill-bar-item:last-child {
+  margin-bottom: 0;
+}
+
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.skill-percentage {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.skill-bar-bg {
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 4px;
+  width: 0%;
+  transition: width 0.8s ease 0.3s;
+}
+
+.skill-card:hover .skill-bar-fill {
+  width: var(--skill-width);
+}
+
+/* Responsive adjustments */
+/* @media (max-width: 768px) {
+  .skill-desc::after {
+    position: relative;
+    top: 15px;
+    color: black;
+    content: "CLICKABLE";
+    display: block;
+    text-decoration: overline;
+  }
+} */
+.skill-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.skill-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.skill-desc {
+  color: #666;
+  line-height: 1.5;
+}
