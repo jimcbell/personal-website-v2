@@ -12,7 +12,7 @@ export default function Skills() {
             web applications
           </p>
           <div className="skill-card-content">
-            <div className="dropdown-title">Technical Skills</div>
+            <div className="dropdown-title">Frontend Skills</div>
             <div className="skill-bar-item">
               <div className="skill-name">
                 <span>React</span>

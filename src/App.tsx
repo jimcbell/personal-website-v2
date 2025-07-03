@@ -60,7 +60,7 @@ function App() {
           <h1 className="nav-logo">James Campbell</h1>
           <div className="social-link-bar dark">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/jimcbell"
               className="social-link"
               target="_blank"
               rel="noopener"
@@ -72,7 +72,7 @@ function App() {
             </a>
 
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://linkedin.com/in/jimlcampbell/"
               className="social-link"
               target="_blank"
               rel="noopener"
@@ -83,7 +83,7 @@ function App() {
               <span className="social-link-text">LinkedIn</span>
             </a>
             <a
-              href="https://stackoverflow.com/users/yourid"
+              href="https://stackoverflow.com/users/22130726/jim-campbell"
               className="social-link"
               target="_blank"
               rel="noopener"
@@ -93,7 +93,7 @@ function App() {
               </svg>
               <span className="social-link-text">Stack Overflow</span>
             </a>
-            <a href="mailto:your.email@example.com" className="social-link">
+            <a href="mailto:jimlcbell@gmail.com" className="social-link">
               <svg viewBox="0 0 24 24">
                 <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.9.732-1.636 1.636-1.636h.727L12 10.455l9.637-6.634h.727c.904 0 1.636.732 1.636 1.636z" />
               </svg>
