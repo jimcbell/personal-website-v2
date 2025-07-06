@@ -51,8 +51,9 @@ body {
 
 .nav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 15px;
 }
 
 .nav-logo {
@@ -99,6 +100,16 @@ body {
   background: white;
   border-radius: 1px;
 }
+@media (max-width: 1200px) {
+  .social-link-bar span{
+    display: none !important;
+  }
+}
+@media (max-width: 1000px) {
+  .social-link-bar{
+    display: none !important;
+  }
+}
 @media (max-width: 768px) {
   .nav-container {
     justify-content: center;
@@ -111,9 +122,6 @@ body {
 
   .nav-logo {
     font-size: 20px;
-  }
-  .social-link-bar {
-    display: none !important;
   }
 }
 
