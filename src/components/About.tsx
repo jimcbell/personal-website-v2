@@ -11,9 +11,12 @@ export default function About() {
           technologies and have a keen eye for design.
         </p>
         <p className="about-text">
-          When I'm not coding, you'll find me exploring new frameworks,
-          contributing to open source, or capturing moments through photography.
+          When I'm not coding, I enjoy staying active through recreational sports leagues and cycling,
+          exploring the city on foot, or relaxing with a good book or game of chess.
         </p>
+        <a className="about-text chess-link" target="_blank" href="https://link.chess.com/friend/rrPTQn">
+          Add me on Chess.com ♟️
+        </a>
       </div>
     </>
   );
