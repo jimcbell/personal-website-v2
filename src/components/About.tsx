@@ -14,7 +14,7 @@ export default function About() {
           When I'm not coding, I enjoy staying active through recreational sports leagues and cycling,
           exploring the city on foot, or relaxing with a good book or game of chess.
         </p>
-        <a className="about-text chess-link" target="_blank" href="https://link.chess.com/friend/rrPTQn">
+        <a className="about-text chess-link" target="_blank" href="https://www.chess.com/member/jimcbell">
           Add me on Chess.com ♟️
         </a>
       </div>
