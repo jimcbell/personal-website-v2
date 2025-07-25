@@ -10,7 +10,7 @@ const projects = [
     tags: ["React", "API", "HTML", "CSS"]
   },
   {
-    projectName: "Gmail Cleaner 🔗",
+    projectName: "Gmail Cleaner",
     projectUrl: "https://www.youtube.com/watch?v=NY3DGYBHPmM",
     projectDescription: "Gmail Cleaner is a utility application allowing users to connect their gmail accounts to easily identify, remove, and unsubscribe from unwanted spam emails.",
     projectIcon: "🗑️",
