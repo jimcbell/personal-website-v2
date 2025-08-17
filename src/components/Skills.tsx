@@ -67,14 +67,14 @@ export default function Skills() {
           <span className="skill-icon">🛠️</span>
           <h3 className="skill-title">Backend Development</h3>
           <p className="skill-desc">
-            Node.js, .NET, databases, and API development for scalable server
+            Node.js, Express.js, databases, and API development for scalable server
             solutions
           </p>
           <div className="skill-card-content">
             <div className="dropdown-title">Backend Skills</div>
             <div className="skill-bar-item">
               <div className="skill-name">
-                <span>.NET / C#</span>
+                <span>Node.js</span>
                 <span className="skill-percentage">95%</span>
               </div>
               <div className="skill-bar-bg">
@@ -86,8 +86,8 @@ export default function Skills() {
             </div>
             <div className="skill-bar-item">
               <div className="skill-name">
-                <span>Node.js</span>
-                <span className="skill-percentage">90%</span>
+                <span>Express.js</span>
+                <span className="skill-percentage">85%</span>
               </div>
               <div className="skill-bar-bg">
                 <div
@@ -158,7 +158,7 @@ export default function Skills() {
             <div className="skill-bar-item">
               <div className="skill-name">
                 <span>AWS</span>
-                <span className="skill-percentage">70%</span>
+                <span className="skill-percentage">80%</span>
               </div>
               <div className="skill-bar-bg">
                 <div
